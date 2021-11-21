@@ -1,0 +1,282 @@
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
+/* .App {
+  text-align: center;
+  height: 100vh;
+  background-color: #000;
+} */
+
+body {
+  background-color: #f9f9f9;
+  /* background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%); */
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+.wrapper > * {
+  margin: 20px 0;
+}
+
+.illustration{
+  width: 312px;
+  min-width: 312px;
+  max-width: 500px;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 15px auto;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  border: 1px solid #222;
+
+}
+
+.form-group input:focus {
+  border: none;
+  outline: 2px solid #F9DA67;
+}
+
+button{
+  cursor: pointer;
+  background-color: #F9DA67;
+  border: 0px;
+  border-radius: 5px;
+  margin: 15px 0px;
+  padding: 10px 0px;
+}
+
+
+.close {
+  cursor: pointer;
+  font-size: 45px;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+.done {
+  background-color: #F9DA67 !important;
+  border-bottom: 2px solid #222 !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.done:hover {
+  color: #222 !important;
+}
+
+.checked {
+  background-color: #222 !important;
+}
+
+.modalContainer{
+  background-color: rgba(249, 249, 249, 0.95);
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: -100%;
+  left: 0;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.show-modal {
+  top: 0 !important;
+}
+
+.hide-modal {
+  top: -100% !important;
+}
+
+.form-container{
+  margin-top: 10rem;
+}
+
+input {
+  height: 40px;
+  padding: 10px;
+  border: 0px;
+  border-radius: 5px;
+}
+
+label{
+  font-weight: 600;
+}
+
+/*Todo Homepage*/
+.dateSection{
+  display: flex;
+  font-weight: 600;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+
+.welcomeNote{
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.floatr{
+  float: right;
+  margin-top: 30px;
+}
+
+.clr{
+  clear: both;
+}
+
+.todo-container {
+  padding-right: 10px;
+  max-height: 320px;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.todo-container ul {
+  list-style: none;
+  height: auto;
+}
+
+.todo-container ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: default;
+  transition: 0.2s ease-in-out;
+}
+
+.todo-container .text {
+  width: 95%;
+}
+
+.todo-container .todo-label {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.todo-container .todo-label .check {
+  margin-right: 20px;
+  width: 20px;
+  height: 20px;
+  background-color: #F9DA67;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.errorPage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+
+
+.illustrationErr{
+  width: 360px;
+  min-width: 312px;
+  max-width: 500px;
+}
+
+.todo-container ul li .controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.todo-container ul li .controls > * {
+  cursor: pointer;
+  margin: 10px;
+}
+
+.todo-container ul li:hover {
+  background-color: #222;
+  color: #F9DA67;
+}
+
+.plus{
+  font-size: 20px;
+}
+
+.btn{
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: #000;
+    cursor: pointer;
+}
+
+.btn-std {
+  padding: 10px;
+}
+
+
+h1{
+  font-family: 'Monda' monospace;
+}
+
+.input-task{
+  outline: none;
+    height: 2.5rem;
+    width: 83%;
+    border-radius: 5px;
+    border: 2px solid #E5E5E5;
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.todo-form {
+  
+  overflow: hidden;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
